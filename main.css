@@ -24,13 +24,10 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
-    background-image: url("images/home-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-    background-attachment: fixed;
 }
 
 .wrapper{
@@ -43,12 +40,12 @@ body{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    z-index: 10;
 }
 .right-align{
     text-align: right;
     width: 100%;
-    background-color: red;
 }
 
 .logo{
@@ -57,18 +54,18 @@ body{
     width: 100%;
 }
 .left{
-    border: solid 1px black;
+    border: solid 1px white;
     padding: 2px 30px;
 }
 .left:hover{
     background: rgba(0,0,0,0.2);
-    border: 1px solid white;
+    border: 1px solid black;
 }
 .left:hover a{
-    color: white;
+    color: black;
 }
 .logo a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .nav-links{
@@ -77,10 +74,23 @@ body{
 .nav-link{
     list-style: none;
     margin-left: 20px;
+    font-size: 1.1em;
 }
 .nav-link a{
-    color: black;
+    color: white;
     text-decoration: none;
+    position: relative;
+ }
+ .nav-link a::before{
+    content: '';
+    position: absolute;
+    
+
+ }
+
+.nav-link a:hover{
+    font-weight: 800;
+    text-decoration: underline;
 }
 
 .section:nth-child(2n+1){
@@ -103,5 +113,15 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 4em;
-    background-color:rgba(230,57,70,0.8);
+    background-color:rgba(230,57,70,0.5);
+}
+#home video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: fixed;
 }
