@@ -330,3 +330,71 @@ body{
     border-radius: 20px 20px 20px 20px;
     margin-bottom: -55%;
 }
+@media(max-height: 400px){
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-10%);
+    }
+    #book{
+        height: 420vh;
+        padding-top: 80px;
+    }
+    .price-wrap{
+        height: 100%;
+    }
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .standard{
+        margin: 20px;
+    }
+    .premium{
+        margin: 20px;
+    }
+    .deluxe{
+        margin: 20px;
+    }
+}
+@media(max-width: 500px){
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-10%);
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        margin: auto;
+    }
+    #book{
+        height: 230vh;
+        padding-top: 80px;
+    }
+    .price-wrap{
+        height: 100%;
+    }
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .standard{
+        margin: 20px;
+    }
+    .premium{
+        margin: 20px;
+    }
+    .deluxe{
+        margin: 20px;
+    }
+}
