@@ -29,7 +29,13 @@
 body{
     font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
 }
-
+.wrap-wrap{
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1000;
+}
 .wrapper{
     width: 80%;
     margin: auto; 
@@ -42,7 +48,6 @@ body{
     justify-content: space-between;
     align-items: baseline;
     z-index: 10;
-    background-color: rgba(0,0,0,0.3)
 }
 .right-align{
     text-align: right;
@@ -332,13 +337,6 @@ body{
     margin-bottom: -55%;
 }
 @media(max-height: 400px){
-    .navbar{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        transform: translate(-10%);
-    }
     #book{
         height: 450vh;
         padding-top: 80px;
@@ -362,6 +360,9 @@ body{
     }
 }
 @media(max-width: 500px){
+    .wrap-wrap{
+        height: 85px;
+    }
     .navbar{
         flex-direction: column;
         width: 100%;
