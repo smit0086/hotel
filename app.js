@@ -5,6 +5,8 @@ var carousel = document.getElementById("carousel");
 var circle1 = document.getElementById("circle1");
 var circle2 = document.getElementById("circle2");
 var circle3 = document.getElementById("circle3");
+var circle4 = document.getElementById("circle4");
+var circle5 = document.getElementById("circle5");
 var numSlides = 5;
 
 // Side navigation
@@ -23,13 +25,14 @@ nextBTN.onclick = function(){
 
 prevBTN.onclick = function(){
   var width = carousel.offsetWidth;
+  console.log(width);
   var margin = parseInt(slides.style.marginLeft);
   var circle = "circle";
   if (margin >= 0){
-    margin = -1280;
+    margin = -(width*4);
   }
   else{
-    margin += 640;
+    margin += width;
   }
   slides.style.marginLeft = margin + "px";
   manageCircles(margin, width);
