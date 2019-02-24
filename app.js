@@ -25,7 +25,6 @@ nextBTN.onclick = function(){
 
 prevBTN.onclick = function(){
   var width = carousel.offsetWidth;
-  console.log(width);
   var margin = parseInt(slides.style.marginLeft);
   var circle = "circle";
   if (margin >= 0){

@@ -239,3 +239,94 @@ body{
     border-radius: 100%;
     transition: background-color 0.5s;
   }
+  /*pricing*/
+  .price-wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+  }
+  .pricing{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+  }
+.pricing img{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+.pricing ul li{
+    list-style: none;
+    padding: 5px;
+}
+.pricing ul li:nth-child(even){
+    background-color: #ddd;
+}
+.standard{
+    background-color: white;
+    min-width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 4px #666;
+    transition: 500ms;
+}
+.standard:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.standard:hover .price-bg{
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: -65%;
+}
+.price-bg{
+    background-color: #6c91c2;
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 10px;
+}
+.premium{
+    background-color: white;
+    min-width: 300px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px 4px #666;
+    transition: 500ms;
+}
+.premium:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.premium:hover .premium-bg{
+    background-color: #6c91c2;
+    border-radius: 20px 20px 20px 20px;
+    height: 100%;
+    margin-bottom: -83%;
+}
+.premium-bg{
+    background-color: #6c91c2;
+    border-radius: 20px 20px 50% 50%;
+    height: 50%;
+}
+.deluxe{
+    background-color: white;
+    min-width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 4px #666;
+    transition: 500ms;
+}
+.deluxe:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.deluxe:hover .price-bg{
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: -55%;
+}
