@@ -355,6 +355,7 @@ body{
     border-radius: 25px;
     box-shadow: 5px 5px 5px 4px #666;
     padding: 10px;
+    margin: 20px;
 }
 .form h1, .user, .pass{
     text-align: center;
@@ -469,5 +470,14 @@ body{
     }
     .slide5{
         background-position: center;
+    }
+    #login{
+        height: 95vh;
+    }
+    .form{
+        height: 400px;
+    }
+    #footer{
+        height: 5vh;
     }
 }
