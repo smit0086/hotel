@@ -32,36 +32,30 @@
             </div>
         </div>
         <div id="gallery" class="section">
-            <div class="wrap">
-                <div id="arrow-left" class="arrow"></div>
-                <div id="slider">
-                    <div class="slider slider1">
-                        <div class="slide-content">
-                            <span><p>hello</p></span>
-                        </div>
+            <div class="carousel" id="carousel">
+                <div class="control-container">
+                    <div class="prev" id="prev">&#10094</div>
+                    <div class="image-selectors">
+                    <div class="circle" id="circle1" style="background-color: red;"></div>
+                    <div class="circle" id="circle2"></div>
+                    <div class="circle" id="circle3"></div>
+                    <div class="circle" id="circle4"></div>
+                    <div class="circle" id="circle5"></div>
                     </div>
-                    <div class="slider slider2">
-                        <div class="slide-content">
-                        </div>
-                    </div>
-                    <div class="slider slider3">
-                        <div class="slide-content">
-                        </div>
-                    </div>
-                    <div class="slider slider4">
-                        <div class="slide-content">
-                        </div>
-                    </div>
-                    <div class="slider slider5">
-                        <div class="slide-content">
-                        </div>
-                    </div>
+                    <div class="next" id="next">&#10095</div>
                 </div>
-                <div id="arrow-right" class="arrow"></div>
+                <div class="slides" id="slides" style="margin-left:0px;">
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                    <div class="slide slide4"></div>
+                    <div class="slide slide5"></div>
+                </div>
             </div>
         </div>
         <div id="book" class="section"></div>
         <div id="login" class="section"></div>
+        <script src="app.js"></script>
     </div>
 </body>
 </html>
