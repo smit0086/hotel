@@ -178,26 +178,31 @@ body{
   .slide1 {
     background-image: url("./images/gallery/web1.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
   .slide2 {
     background-color: blue;
     background-image: url("./images/gallery/web2.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
   .slide3 {
     background-color: orange;
     background-image: url("./images/gallery/web3.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
   .slide4{
     background-color: green;
     background-image: url("./images/gallery/web4.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
   .slide5{
     background-color: purple;
     background-image: url("./images/gallery/web5.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
   .control-container {
     position: absolute;
